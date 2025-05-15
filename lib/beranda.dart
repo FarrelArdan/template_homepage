@@ -10,12 +10,12 @@ class HomeBeranda extends StatefulWidget {
 class _HomeBerandaState extends State<HomeBeranda> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _pages = <Widget>[
-    Center(child: Text('Home Page')),
-    Center(child: Text('Setting Page')),
-    Center(child: Text('QR Code Page')),
-    Center(child: Text('Card Page')),
-    Center(child: Text('Key Page')),
+  static final List<Widget> _pages = <Widget>[
+    const MyHeroWidget(),
+    const Center(child: Text('Setting Page')),
+    const Center(child: Text('QR Code Page')),
+    const Center(child: Text('Card Page')),
+    const Center(child: Text('Key Page')),
   ];
 
   void _onItemTapped(int index) {
@@ -46,10 +46,35 @@ class _HomeBerandaState extends State<HomeBeranda> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Identitas Kependudukan Digital",),
+      appBar: AppBar(
+        title: const Text("Identitas Kependudukan Digital"),
       ),
       body: _pages[_selectedIndex],
       bottomNavigationBar: bottomNavigatorBar(),
+    );
+  }
+}
+
+class MyHeroWidget extends StatelessWidget {
+  const MyHeroWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(60),
+          color: Colors.black,
+          child: Row(
+            children: [
+              Image.asset("assets/images/ktp_latar_merah3_1.png"),
+              const SizedBox(height: 10),
+              const Text("Farrel", style: TextStyle(color: Colors.white)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

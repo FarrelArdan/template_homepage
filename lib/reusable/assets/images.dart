@@ -4,7 +4,7 @@ abstract class _MyAssetImage {
   static const _dir_='assets/images/';
 
   /*IMAGES */
-  static const fotoKtpMer = '${_dir_}foto_ktp_mer';
+  static const fotoKtpMer = '${_dir_}ktp_latar_merah3_1';
 }
 
   abstract class MyAssetImage extends _MyAssetImage {
