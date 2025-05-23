@@ -55,7 +55,16 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/ktp_latar_merah3_1.png
-
+    - assets/images/ikd_logo.png
+    - assets/images/biodata.png
+    - assets/images/dokumenku.png
+    - assets/images/data_keluarga.png
+    - assets/images/kantor_dukcapil.png
+    - assets/images/histori_aktivitas.png
+    - assets/images/akses_cepat.png
+    - assets/images/dokumen.png
+    - assets/images/monitoring.png
+    - assets/images/dukcapil.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
